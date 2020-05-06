@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifier</title>
+    
+</head>
+<body>
+
+    <div class="spaced-margin">
+        <label for="username">Usuário</label><br>
+        <input type="text" id="username" autocomplete="name">
+        <label for="passwd">Senha:</label><br>
+        <input type="text" id="passwd" autocomplete="new-password">
+    </div>
+    <div>
+        <button id="requestMoodle">Requisitar info</button>
+        <button id="openMoodle">Abrir Moodle</button>
+    </div>
+    <div>
+        <button id="saveCredentials">Salvar <i>Usuário</i> & <i>Senha</i></button>
+    </div>
+
+</body>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="./requests.js"></script>
+<script src="./popup.js"></script>
+</html>
